@@ -74,8 +74,8 @@ module WillPaginate
 
       options = WillPaginate::ViewHelpers.pagination_options.merge(options)
 
-      options[:previous_label] ||= will_paginate_translate(:previous_label) { '&#8592; Previous' }
-      options[:next_label]     ||= will_paginate_translate(:next_label) { 'Next &#8594;' }
+      options[:previous_label] ||= will_paginate_translate(:previous_label) { '&lt;&lt;' }
+      options[:next_label]     ||= will_paginate_translate(:next_label) { '&gt;&gt;' }
 
       # get the renderer instance
       renderer = case options[:renderer]
